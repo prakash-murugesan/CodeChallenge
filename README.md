@@ -19,7 +19,7 @@ The main notebook is the MachineLearningChallenge notebook. It contains a compre
         
 For the Neural Network implementation, I explored an LSTM. However, with the some increase in results, it came with additional complexities. I've left the LSTM to just work on the data in it's notebook and haven't included it in the final train/predict functions in the main notebook. For now, a simple yet robust versions of models using XGBoost for Predictive Maintenance and RandomForestRegression for Forecasting have been used.         
         
-If I had to pick, I'd say I'm proud of not having used any for loops at all in the main code. Vectorized and package based implementations help with speed and scale! Especially, with the Preprocess function that uses several pandas methods that encompass edge cases
+If I had to pick, I'd say I'm proud of not having used any for loops at all in the code. Vectorized and package based implementations help with speed and scale! Especially, with the Preprocess function that uses several pandas methods to encompass edge cases. The function also manages to fill NaNs to the closest likely value by choosing information at the nearest timestep of the turbines.
         
 Oh, and also proud of how much fun I had working through this problem! 
         
