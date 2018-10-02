@@ -1,5 +1,6 @@
 # Machine Learning Code Challenge 
 
+#### Objective
 Given 2 data challenges that test for the ability to:
 - Wrangle/clean data to make it usable by a model
 - Figure out how to set up X's and y's for a use case, given a dataset
@@ -7,23 +8,20 @@ Given 2 data challenges that test for the ability to:
 - Pick/design the right model, and tune hyperparameters to get the best performance
 
 #### Deliverables:
-- A link to a github repository that contains:
-    - Code is documented within the notebooks
-    - Models stored with joblib
-    - ReadME file:
-        - Instructions to easily access/load the above
-        - A writeup explaining any significant design decisions and your reasons for making them. 
-        - If needed, a brief writeup explaining anything you are particularly proud of in your implementation that you might want us to focus on
+- Github
+- Code is documented within the notebooks
+- Models stored with joblib
+- ReadME file:
     
-    
-        I've built rough working copies of each task in a separate notebook. There are 3 working copies, task 1, task 2, and the Neural Net.
-        The main notebook is the MachineLearningChallenge notebook. It contains a comprehensive functionalized implementation of the code for both the tasks. Including a final "train(data)" and "predict(data)" function. Hyperparameter tuning resulted in models too big for github so I've scaled them back down for space limitations.
+Most of the code documentation is explored in greater depth and detail in the working copy notebooks. In total, there are 3 working copies dedicated to task 1, task 2, and the LSTM Neural Net. 
         
-        For the Neural Network implementation, I explored an LSTM inspired by a similar project. However, with the increase in results, it came with a multitude of complexities. For now, a simple version of models using XGBoost for predictive failure and RandomForestRegression for forecasting have been used. 
+The main notebook is the MachineLearningChallenge notebook. It contains a comprehensive functionalized implementation of the code for both the tasks. Including final "train(data)" and "predict(data)" functions. Hyperparameter tuning resulted in models too big for github so I've scaled them back down for space limitations.
         
-        If I had to pick, I'd say I'm proud of not having used any for loops at all. Vectorized and package based implementations help with speed and scale! 
+For the Neural Network implementation, I explored an LSTM. However, with the some increase in results, it came with additional complexities. I've left the LSTM to just work on the data in it's notebook and haven't included it in the final train/predict functions in the main notebook. For now, a simple yet robust versions of models using XGBoost for Predictive Maintenance and RandomForestRegression for Forecasting have been used.         
         
-        Oh, also proud of how much fun I had working through this problem! 
+If I had to pick, I'd say I'm proud of not having used any for loops at all in the main code. Vectorized and package based implementations help with speed and scale! Especially, with the Preprocess function that uses several pandas methods that encompass edge cases
+        
+Oh, and also proud of how much fun I had working through this problem! 
         
 
 #### Code Assessment:
@@ -47,4 +45,5 @@ Given 2 data challenges that test for the ability to:
   
 #### References:
 WaterPump Maintenance: https://towardsdatascience.com/water-pumps-maintenance-prediction-data-science-illustrated-20c7100017c5
+
 Hyperparameter tuning: https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74 
